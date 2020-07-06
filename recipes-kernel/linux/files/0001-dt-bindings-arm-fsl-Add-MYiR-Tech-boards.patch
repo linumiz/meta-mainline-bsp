@@ -1,0 +1,27 @@
+From 36f4f4eaa76e6428c4bc50d931248c10af6463dd Mon Sep 17 00:00:00 2001
+From: Parthiban Nallathambi <parthiban@linumiz.com>
+Date: Mon, 1 Jun 2020 12:32:19 +0000
+Subject: [PATCH 1/2] dt-bindings: arm: fsl: Add MYiR Tech boards
+
+Add entries for MYiR Tech imx6ULL eval boards.
+
+Signed-off-by: Parthiban Nallathambi <parthiban@linumiz.com>
+---
+ Documentation/devicetree/bindings/arm/fsl.yaml | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/Documentation/devicetree/bindings/arm/fsl.yaml b/Documentation/devicetree/bindings/arm/fsl.yaml
+index 05906e291e38..15f510492e88 100644
+--- a/Documentation/devicetree/bindings/arm/fsl.yaml
++++ b/Documentation/devicetree/bindings/arm/fsl.yaml
+@@ -268,6 +268,7 @@ properties:
+               - armadeus,imx6ull-opos6uldev # OPOS6UL (i.MX6ULL) SoM on OPOS6ULDev board
+               - fsl,imx6ull-14x14-evk     # i.MX6 UltraLiteLite 14x14 EVK Board
+               - kontron,imx6ull-n6411-som # Kontron N6411 SOM
++              - myir,imx6ull-mys-6ulx-eval # MYiR Tech iMX6ULL Evaluation Board
+               - toradex,colibri-imx6ull-eval            # Colibri iMX6ULL Module on Colibri Evaluation Board
+               - toradex,colibri-imx6ull-wifi-eval       # Colibri iMX6ULL Wi-Fi / Bluetooth Module on Colibri Evaluation Board
+           - const: fsl,imx6ull
+-- 
+2.27.0
+

@@ -1,0 +1,6 @@
+part SPL    --no-table --align 1  --source rawcopy --sourceparams="file=SPL"
+part u-boot --no-table --align 69 --source rawcopy --sourceparams="file=u-boot.img"
+part kernel0 --source bootimg-partition --ondisk mmcblk1 --fstype=vfat --label kernel0 --active --size 32M
+part root0 --fixed-size 256M  --align 4096 --fstype=squashfs --source rawcopy --sourceparams="file=mys-image-base-mys-6ulx-sbc.ext4"
+
+bootloader --ptable msdos
