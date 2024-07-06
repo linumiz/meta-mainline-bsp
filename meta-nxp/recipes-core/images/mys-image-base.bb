@@ -10,4 +10,3 @@ IMAGE_INSTALL = "\
 	packagegroup-core-boot \
 	kernel-modules \
 "
-export IMAGE_BASENAME = "mys-image-base"

@@ -7,9 +7,8 @@ inherit kernel
 inherit kernel-yocto 
 require recipes-kernel/linux/linux-yocto.inc
 
-FILESEXTRAPATHS_append := "${THISDIR}/${PN}-${PV}:"
-
 S = "${WORKDIR}/git"
+DEPENDS += "lzop-native "
 
 # Exclude this from generation of mirror tarballs
 BB_GENERATE_MIRROR_TARBALLS = "0"
